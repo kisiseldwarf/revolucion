@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shyren_sing_1.wav-635ef4a766001028fbb07721c58a890c.sample"
+
+[deps]
+
+source_file="res://Undertale Sound Effects/shyren_sing_1.wav"
+dest_files=[ "res://.import/shyren_sing_1.wav-635ef4a766001028fbb07721c58a890c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

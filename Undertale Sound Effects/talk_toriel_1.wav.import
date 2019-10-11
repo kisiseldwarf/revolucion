@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/talk_toriel_1.wav-8230e9b6c97af6fbc507ece08935a2b2.sample"
+
+[deps]
+
+source_file="res://Undertale Sound Effects/talk_toriel_1.wav"
+dest_files=[ "res://.import/talk_toriel_1.wav-8230e9b6c97af6fbc507ece08935a2b2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

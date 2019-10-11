@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/signal_distort_4.wav-233bbfb43f8d21cd476bb8bfca4eade6.sample"
+
+[deps]
+
+source_file="res://Undertale Sound Effects/signal_distort_4.wav"
+dest_files=[ "res://.import/signal_distort_4.wav-233bbfb43f8d21cd476bb8bfca4eade6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

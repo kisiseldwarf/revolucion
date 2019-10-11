@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/soul_damage_2.wav-026fd2d8dbd778cf2c37644506cca544.sample"
+
+[deps]
+
+source_file="res://Undertale Sound Effects/soul_damage_2.wav"
+dest_files=[ "res://.import/soul_damage_2.wav-026fd2d8dbd778cf2c37644506cca544.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

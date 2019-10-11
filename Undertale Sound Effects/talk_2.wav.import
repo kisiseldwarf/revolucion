@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/talk_2.wav-12c977e24bbd08c2c1d7d4859fc64f87.sample"
+
+[deps]
+
+source_file="res://Undertale Sound Effects/talk_2.wav"
+dest_files=[ "res://.import/talk_2.wav-12c977e24bbd08c2c1d7d4859fc64f87.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
