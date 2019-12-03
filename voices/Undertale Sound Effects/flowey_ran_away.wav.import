@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/flowey_ran_away.wav-703e4b2a733adf502c977883bd8d1eb2.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/flowey_ran_away.wav"
+dest_files=[ "res://.import/flowey_ran_away.wav-703e4b2a733adf502c977883bd8d1eb2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

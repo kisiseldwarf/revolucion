@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/undyne_spear_appear.wav-34776299ba79e407abf4d5cd625bc570.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/undyne_spear_appear.wav"
+dest_files=[ "res://.import/undyne_spear_appear.wav-34776299ba79e407abf4d5cd625bc570.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

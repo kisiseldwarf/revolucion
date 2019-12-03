@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tsundreplane_crash.wav-90c399e18d2ebb60efad0dea191c2f02.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/tsundreplane_crash.wav"
+dest_files=[ "res://.import/tsundreplane_crash.wav-90c399e18d2ebb60efad0dea191c2f02.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

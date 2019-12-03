@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/core_puzzle.wav-ad28b76fbe068a093c0f429a88cbd49b.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/core_puzzle.wav"
+dest_files=[ "res://.import/core_puzzle.wav-ad28b76fbe068a093c0f429a88cbd49b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

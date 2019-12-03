@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/monster_encounter.wav-747819a718dcecabf49a608d817ae125.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/monster_encounter.wav"
+dest_files=[ "res://.import/monster_encounter.wav-747819a718dcecabf49a608d817ae125.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

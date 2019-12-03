@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/drum_single_1.wav-187167b473a420d5e7f2959a46b9e9bd.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/drum_single_1.wav"
+dest_files=[ "res://.import/drum_single_1.wav-187167b473a420d5e7f2959a46b9e9bd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

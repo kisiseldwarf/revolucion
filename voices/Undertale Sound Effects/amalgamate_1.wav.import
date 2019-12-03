@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/amalgamate_1.wav-ae0f9b4a6cd52314ec6e544b1b5aebef.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/amalgamate_1.wav"
+dest_files=[ "res://.import/amalgamate_1.wav-ae0f9b4a6cd52314ec6e544b1b5aebef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

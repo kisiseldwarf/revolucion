@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SAVE_succes.wav-44a780a34eb9a419ba3c69527099cb20.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/SAVE_succes.wav"
+dest_files=[ "res://.import/SAVE_succes.wav-44a780a34eb9a419ba3c69527099cb20.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

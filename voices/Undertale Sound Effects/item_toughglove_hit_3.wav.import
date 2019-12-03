@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/item_toughglove_hit_3.wav-4c13c0b6b6a96d80b8662bc13b38bbf4.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/item_toughglove_hit_3.wav"
+dest_files=[ "res://.import/item_toughglove_hit_3.wav-4c13c0b6b6a96d80b8662bc13b38bbf4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/footsteps_water_2.wav-f405888f080a4b0702e9597d8445a6b7.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/footsteps_water_2.wav"
+dest_files=[ "res://.import/footsteps_water_2.wav-f405888f080a4b0702e9597d8445a6b7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

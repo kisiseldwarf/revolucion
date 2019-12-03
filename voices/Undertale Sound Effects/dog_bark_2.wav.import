@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dog_bark_2.wav-317add1763ea7d8ddc515552ff260e43.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/dog_bark_2.wav"
+dest_files=[ "res://.import/dog_bark_2.wav-317add1763ea7d8ddc515552ff260e43.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

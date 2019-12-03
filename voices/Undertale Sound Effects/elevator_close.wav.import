@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/elevator_close.wav-5ae0f4077bac3709ba6881aea4eec731.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/elevator_close.wav"
+dest_files=[ "res://.import/elevator_close.wav-5ae0f4077bac3709ba6881aea4eec731.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

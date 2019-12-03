@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/talk_undyne_1.wav-c6a8627a715b51bfd8f80acf1f171132.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/talk_undyne_1.wav"
+dest_files=[ "res://.import/talk_undyne_1.wav-c6a8627a715b51bfd8f80acf1f171132.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

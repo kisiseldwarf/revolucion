@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/talk_4.wav-ea3c8618dd31b18e674b8bcba55504e7.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/talk_4.wav"
+dest_files=[ "res://.import/talk_4.wav-ea3c8618dd31b18e674b8bcba55504e7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

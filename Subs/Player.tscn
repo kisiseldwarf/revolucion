@@ -1,52 +1,53 @@
 [gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://characters_frames/2-0.png" type="Texture" id=2]
-[ext_resource path="res://characters_frames/3-0.png" type="Texture" id=3]
-[ext_resource path="res://characters_frames/3-1.png" type="Texture" id=4]
-[ext_resource path="res://characters_frames/3-2.png" type="Texture" id=5]
-[ext_resource path="res://characters_frames/3-3.png" type="Texture" id=6]
-[ext_resource path="res://characters_frames/3-4.png" type="Texture" id=7]
-[ext_resource path="res://characters_frames/3-5.png" type="Texture" id=8]
-[ext_resource path="res://characters_frames/3-6.png" type="Texture" id=9]
-[ext_resource path="res://characters_frames/3-7.png" type="Texture" id=10]
-[ext_resource path="res://characters_frames/3-8.png" type="Texture" id=11]
-[ext_resource path="res://characters_frames/1-0.png" type="Texture" id=12]
-[ext_resource path="res://characters_frames/1-1.png" type="Texture" id=13]
-[ext_resource path="res://characters_frames/1-2.png" type="Texture" id=14]
-[ext_resource path="res://characters_frames/1-3.png" type="Texture" id=15]
-[ext_resource path="res://characters_frames/1-4.png" type="Texture" id=16]
-[ext_resource path="res://characters_frames/1-5.png" type="Texture" id=17]
-[ext_resource path="res://characters_frames/1-6.png" type="Texture" id=18]
-[ext_resource path="res://characters_frames/1-7.png" type="Texture" id=19]
-[ext_resource path="res://characters_frames/1-8.png" type="Texture" id=20]
-[ext_resource path="res://characters_frames/0-1.png" type="Texture" id=21]
-[ext_resource path="res://characters_frames/0-2.png" type="Texture" id=22]
-[ext_resource path="res://characters_frames/0-3.png" type="Texture" id=23]
-[ext_resource path="res://characters_frames/0-4.png" type="Texture" id=24]
-[ext_resource path="res://characters_frames/0-5.png" type="Texture" id=25]
-[ext_resource path="res://characters_frames/0-6.png" type="Texture" id=26]
-[ext_resource path="res://characters_frames/0-7.png" type="Texture" id=27]
-[ext_resource path="res://characters_frames/0-8.png" type="Texture" id=28]
-[ext_resource path="res://characters_frames/2-1.png" type="Texture" id=29]
-[ext_resource path="res://characters_frames/2-2.png" type="Texture" id=30]
-[ext_resource path="res://characters_frames/2-3.png" type="Texture" id=31]
-[ext_resource path="res://characters_frames/2-4.png" type="Texture" id=32]
-[ext_resource path="res://characters_frames/2-5.png" type="Texture" id=33]
-[ext_resource path="res://characters_frames/2-6.png" type="Texture" id=34]
-[ext_resource path="res://characters_frames/2-7.png" type="Texture" id=35]
-[ext_resource path="res://characters_frames/2-8.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/characters_frames/3-0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/characters_frames/3-1.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/characters_frames/3-2.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/characters_frames/3-3.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/characters_frames/3-4.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/characters_frames/3-5.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/characters_frames/3-6.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/characters_frames/3-7.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/characters_frames/3-8.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/characters_frames/0-1.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/characters_frames/0-2.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/characters_frames/0-3.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/characters_frames/0-4.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/characters_frames/0-5.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/characters_frames/0-6.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/characters_frames/0-7.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/characters_frames/0-8.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/characters_frames/1-0.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/characters_frames/1-1.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/characters_frames/1-2.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/characters_frames/1-3.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/characters_frames/1-4.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/characters_frames/1-5.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/characters_frames/1-6.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/characters_frames/1-7.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/characters_frames/1-8.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/characters_frames/2-1.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/characters_frames/2-2.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/characters_frames/2-3.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/characters_frames/2-4.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/characters_frames/2-5.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/characters_frames/2-6.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/characters_frames/2-7.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/characters_frames/2-8.png" type="Texture" id=36]
 [ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=37]
 [ext_resource path="res://addons/GodotTIE/GodotTIE_icon.png" type="Texture" id=38]
 [ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=39]
 
-[sub_resource type="RectangleShape2D" id=14]
+
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 28.1281, 31.0539 )
 
-[sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 13.394, 24.0873 )
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 13.394, 16.5684 )
 
-[sub_resource type="SpriteFrames" id=16]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
@@ -58,14 +59,14 @@ animations = [ {
 "name": "side_walk_left",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
-"loop": true,
-"name": "side_walk_right",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "walk_up",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "side_walk_right",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ) ],
@@ -75,7 +76,6 @@ animations = [ {
 } ]
 
 [node name="Player" type="KinematicBody2D"]
-editor/display_folded = true
 position = Vector2( 397.167, 61.9517 )
 script = ExtResource( 1 )
 text_speed = 0.01
@@ -86,14 +86,14 @@ position = Vector2( 102.388, -0.917233 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dialog_Area"]
 position = Vector2( -103.493, 7.96099 )
-shape = SubResource( 14 )
+shape = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.39209, 6.93565 )
-shape = SubResource( 15 )
+position = Vector2( -1.39209, 1.2634 )
+shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 16 )
+frames = SubResource( 3 )
 animation = "side_walk_left"
 frame = 8
 

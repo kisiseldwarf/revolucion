@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/asriel_battle_sound_6.wav-412654d2c9c9c19b9c7463b0d0cbb3a0.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/asriel_battle_sound_6.wav"
+dest_files=[ "res://.import/asriel_battle_sound_6.wav-412654d2c9c9c19b9c7463b0d0cbb3a0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

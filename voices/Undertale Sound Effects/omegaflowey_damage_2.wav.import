@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/omegaflowey_damage_2.wav-ffaf89faaeda4f902669420440024eeb.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/omegaflowey_damage_2.wav"
+dest_files=[ "res://.import/omegaflowey_damage_2.wav-ffaf89faaeda4f902669420440024eeb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

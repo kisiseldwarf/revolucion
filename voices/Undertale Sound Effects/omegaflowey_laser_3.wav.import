@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/omegaflowey_laser_3.wav-d7f0c4f383a4796c6bb3b0efb8178989.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/omegaflowey_laser_3.wav"
+dest_files=[ "res://.import/omegaflowey_laser_3.wav-d7f0c4f383a4796c6bb3b0efb8178989.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

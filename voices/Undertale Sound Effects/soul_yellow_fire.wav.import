@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/soul_yellow_fire.wav-b9d2023ad637714a32aaf081779078da.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/soul_yellow_fire.wav"
+dest_files=[ "res://.import/soul_yellow_fire.wav-b9d2023ad637714a32aaf081779078da.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/omegaflowey_battle_sound_12.wav-1c0ccfefc8fa178259c6deaca8493c6b.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/omegaflowey_battle_sound_12.wav"
+dest_files=[ "res://.import/omegaflowey_battle_sound_12.wav-1c0ccfefc8fa178259c6deaca8493c6b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

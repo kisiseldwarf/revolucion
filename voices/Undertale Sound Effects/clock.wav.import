@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/clock.wav-6e53e7e2479c197f084b5011cffe2126.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/clock.wav"
+dest_files=[ "res://.import/clock.wav-6e53e7e2479c197f084b5011cffe2126.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

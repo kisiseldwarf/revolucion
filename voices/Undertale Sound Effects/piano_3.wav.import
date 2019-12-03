@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/piano_3.wav-0e30767b16f9977b4a6100b13fcf93bf.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/piano_3.wav"
+dest_files=[ "res://.import/piano_3.wav-0e30767b16f9977b4a6100b13fcf93bf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

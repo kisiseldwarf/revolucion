@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/battle_item_eat.wav-c03cfdd539fbf55f4724e2985f5ba4c0.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/battle_item_eat.wav"
+dest_files=[ "res://.import/battle_item_eat.wav-c03cfdd539fbf55f4724e2985f5ba4c0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

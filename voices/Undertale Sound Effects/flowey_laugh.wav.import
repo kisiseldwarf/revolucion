@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/flowey_laugh.wav-6f44ae9dd90473c90a28426137635a14.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/flowey_laugh.wav"
+dest_files=[ "res://.import/flowey_laugh.wav-6f44ae9dd90473c90a28426137635a14.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

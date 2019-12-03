@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sans_battle_gasterblaster_charge.wav-b378c3362ca1c04a7a78da72f0cd78a9.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/sans_battle_gasterblaster_charge.wav"
+dest_files=[ "res://.import/sans_battle_gasterblaster_charge.wav-b378c3362ca1c04a7a78da72f0cd78a9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

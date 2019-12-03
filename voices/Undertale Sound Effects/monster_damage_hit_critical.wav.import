@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/monster_damage_hit_critical.wav-6b65b6f72e26e5fce35ead2ecd4283a6.sample"
+
+[deps]
+
+source_file="res://voices/Undertale Sound Effects/monster_damage_hit_critical.wav"
+dest_files=[ "res://.import/monster_damage_hit_critical.wav-6b65b6f72e26e5fce35ead2ecd4283a6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
