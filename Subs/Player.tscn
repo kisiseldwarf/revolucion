@@ -1,6 +1,6 @@
 [gd_scene load_steps=43 format=2]
 
-[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Human/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/characters_frames/3-0.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/characters_frames/3-1.png" type="Texture" id=4]
@@ -39,6 +39,8 @@
 [ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=37]
 [ext_resource path="res://addons/GodotTIE/GodotTIE_icon.png" type="Texture" id=38]
 [ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=39]
+
+
 
 
 [sub_resource type="RectangleShape2D" id=1]

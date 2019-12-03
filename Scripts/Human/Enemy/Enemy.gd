@@ -7,23 +7,42 @@ export var HP = 100
 signal death
 signal spacebar_pressed
 signal dialog_end
+signal new_physics_frame
 export var velocity = 4
 export var text = PoolStringArray()
 var last_direction = Vector2(0,0)
 export var voice:AudioStreamSample
 enum direction { UP, DOWN, RIGHT, LEFT}
+var graph #graph for astar
+onready var nav2D = get_parent().get_parent().get_node("Navigation2D")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if HP == 0:
 		die()
+	graph = AStar.new()
+	create_graph()
+
+#graph for astar
+func create_graph():
+	pass
 
 func _process(delta):
 	pass
 
 func _physics_process(delta):
-	var direction = Vector2(0,0)
-	animation(direction)
+	emit_signal("new_physics_frame")
+	if is_player_in():
+		print(nav2D)
+		if(nav2D != null):
+			var path = nav2D.get_simple_path(is_player_in().position,position)
+			move_along_path(path)
+
+func move_along_path(path):
+	var start_point = position
+	for point in path:
+		var distance_to_next = start_point.distance_to(point)
+		position = start_point.linear_interpolate(point,distance_to_next)
 
 #movement animation script ( /!\ )
 func animation(direction):
@@ -115,7 +134,7 @@ func move(point,speed):
 	while absolute > Vector2(1,1):
 		move_and_slide(direction * speed)
 		var direction_rounded = direction.round()
-		animation(direction_rounded)
+		last_direction = direction_rounded
 		yield(self,"new_physics_frame")
 		absolute = position - point
 		absolute = absolute.abs()
@@ -156,3 +175,10 @@ func know_direction():
 			return direction.LEFT
 		_:
 			return direction.DOWN
+
+func is_player_in():
+	var bodies = $Aggro.get_overlapping_bodies()
+	for i in bodies:
+		if i.is_in_group("Player"):
+			return i
+	return false

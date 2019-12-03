@@ -1,6 +1,6 @@
 [gd_scene load_steps=39 format=2]
 
-[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Human/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/characters_frames/2-1.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/characters_frames/2-2.png" type="Texture" id=4]
@@ -36,6 +36,8 @@
 [ext_resource path="res://Sprites/characters_frames/1-6.png" type="Texture" id=34]
 [ext_resource path="res://Sprites/characters_frames/1-7.png" type="Texture" id=35]
 [ext_resource path="res://Sprites/characters_frames/1-8.png" type="Texture" id=36]
+
+
 
 
 [sub_resource type="RectangleShape2D" id=1]

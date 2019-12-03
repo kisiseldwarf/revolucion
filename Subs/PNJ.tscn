@@ -1,6 +1,6 @@
 [gd_scene load_steps=40 format=2]
 
-[ext_resource path="res://Scripts/PNJ.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Human/PNJ/PNJ.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/characters_frames/3-0.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/characters_frames/3-1.png" type="Texture" id=4]
@@ -37,6 +37,8 @@
 [ext_resource path="res://Sprites/characters_frames/2-7.png" type="Texture" id=35]
 [ext_resource path="res://Sprites/characters_frames/2-8.png" type="Texture" id=36]
 [ext_resource path="res://Sprites/characters_frames/0-0.png" type="Texture" id=37]
+
+
 
 
 

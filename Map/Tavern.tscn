@@ -1,7 +1,7 @@
 [gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Sprites/Castle_tileset.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Human/Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/characters_frames/3-0.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/characters_frames/3-1.png" type="Texture" id=5]
@@ -40,7 +40,10 @@
 [ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=38]
 [ext_resource path="res://addons/GodotTIE/GodotTIE_icon.png" type="Texture" id=39]
 [ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=40]
-[ext_resource path="res://Scripts/Bard_line.gd" type="Script" id=41]
+[ext_resource path="res://Scripts/Bards/Bard_line.gd" type="Script" id=41]
+
+
+
 
 
 [sub_resource type="RectangleShape2D" id=1]
