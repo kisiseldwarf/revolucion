@@ -5,6 +5,7 @@ export var attack = 50
 export var dying_time = 3
 signal death
 signal move_finished
+signal new_physics_frame
 export var velocity = 4
 var last_direction = Vector2(0,0)
 enum direction { UP, DOWN, RIGHT, LEFT}
@@ -45,7 +46,7 @@ func look(direction):
 			look_right()
 		Vector2(-1,0):
 			look_left()
-func know_direction():
+func get_direction():
 	match last_direction:
 		Vector2(0,-1),Vector2(1,-1),Vector2(-1,-1):
 			return direction.UP
@@ -88,14 +89,13 @@ func animation(direction):
 			$AnimatedSprite.play("walk_up")
 			last_direction = direction
 
-#for in-game cinematic purpose ONLY (or maybe boss battles, but this is special...)
-func move(point,speed):
+func move(point):
 	var direction = Vector2()
 	direction = get_orientation(point)
 	var absolute = position - point
 	absolute = absolute.abs()
 	while absolute > Vector2(1,1):
-		move_and_slide(direction * speed)
+		move_and_slide(direction * velocity)
 		var direction_rounded = direction.round()
 		animation(direction_rounded)
 		yield(self,"new_physics_frame")
@@ -113,7 +113,7 @@ func get_orientation(point):
 
 #TODO : Animation
 func attack():
-	var orientation = know_direction()
+	var orientation = get_direction()
 	var area_of_attack = Area2D.new()
 	
 	match orientation:

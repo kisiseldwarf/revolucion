@@ -28,10 +28,10 @@ func _input(event):
 #dialog script
 func dialog():
 	emit_signal("dialog_began")
-	var pnjs = $Dialog_Area.get_overlapping_bodies()
+	var pnjs = get_active_interabox().get_overlapping_bodies()
+	print(get_active_interabox().get_overlapping_bodies())
 	if pnjs.size() > 1 && pnjs[1].is_in_group("PNJs") && !in_dialog:
 		in_dialog = 1
-
 		pnjs[1].dialog(self)
 		look(last_direction)
 
@@ -77,3 +77,14 @@ func movement(delta):
 	move_and_slide(movement)
 	animation(direction)
 	return direction
+
+func get_active_interabox():
+	match get_direction():
+		direction.UP:
+			return $Interabox/Up
+		direction.DOWN:
+			return $Interabox/Down
+		direction.RIGHT:
+			return $Interabox/Right
+		direction.LEFT:
+			return $Interabox/Left
