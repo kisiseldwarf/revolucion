@@ -10,6 +10,7 @@ var last_direction = Vector2(0,0)
 var direction_v = Vector2(0,0)
 enum direction { UP, DOWN, RIGHT, LEFT}
 var in_cinematic
+var NORMAL_WALK = 200
 
 #cinematic API
 #use this when you want to code a cinematic

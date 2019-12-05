@@ -6,7 +6,6 @@ extends Node2D
 
 #King elmar's place
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var text = ["yo","mdr"]
@@ -24,6 +23,5 @@ func show_text():
 	$GUI.add_child(gui_handler)
 	gui_handler.show()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	pass

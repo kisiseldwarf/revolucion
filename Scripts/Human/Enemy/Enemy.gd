@@ -1,6 +1,7 @@
 extends "res:///Scripts/Human/Human.gd"
 
 onready var nav2D = get_parent().get_parent().get_node("Navigation2D")
+var path
 
 func _physics_process(delta):
 	animation(direction_v)
@@ -14,10 +15,18 @@ func _process(delta):
 	else:
 		direction_v = Vector2(0,0)
 
+func add_points(points,line):
+	for point in points:
+		line.add_point(point)
+
 func fill_curve(object):
 	var start_point = position
 	var end_point = object.position
-	var path = nav2D.get_simple_path(start_point,end_point)
+	path = nav2D.get_simple_path(start_point,end_point)
+	
+	get_parent().get_node("Line2D2").clear_points()
+	add_points(path,get_parent().get_node("Line2D2"))
+	
 	var curve = Curve2D.new()
 	for point in path:
 		curve.add_point(point)
