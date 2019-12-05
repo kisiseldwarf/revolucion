@@ -7,6 +7,7 @@ signal death
 signal move_finished
 export var velocity = 4
 var last_direction = Vector2(0,0)
+var direction_v = Vector2(0,0)
 enum direction { UP, DOWN, RIGHT, LEFT}
 var in_cinematic
 
@@ -95,8 +96,7 @@ func move(point,tolerance):
 	var direction = get_orientation(point)
 	while distance_to_go > tolerance_v:
 		move_and_slide(direction * velocity)
-		animation(direction.round())
-		yield(get_tree(),"physics_frame")
+		direction_v = direction
 		distance_to_go = position - point
 		distance_to_go = distance_to_go.abs()
 	emit_signal("move_finished")

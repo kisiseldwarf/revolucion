@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/Hub.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/tileset-castle.tres" type="TileSet" id=2]
 [ext_resource path="res://Subs/PNJ.tscn" type="PackedScene" id=3]
-[ext_resource path="res://voices/talk_toriel_1.wav" type="AudioStream" id=4]
+[ext_resource path="res://voices/talk_sans.wav" type="AudioStream" id=4]
 [ext_resource path="res://Scripts/Human/Player/Player.gd" type="Script" id=5]
 [ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/characters_frames/0-1.png" type="Texture" id=7]
@@ -95,7 +95,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 36.694, 9.46896 )
+extents = Vector2( 36.694, 14.1 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 11.8505, 37.8516 )
@@ -187,12 +187,11 @@ format = 1
 tile_data = PoolIntArray( 16, 9, 0, 327705, 9, 0, 327707, 9, 0, 393240, 9, 0, 393242, 9, 0, 393244, 9, 0, 458776, 9, 0, 458778, 9, 0, 458780, 9, 0, 458782, 9, 0, 524313, 9, 0, 524315, 9, 0, 589848, 9, 0, 1048576, 9, 0, 1114112, 9, 0, 1179648, 9, 0, 1245184, 9, 0, 1310720, 9, 0, 1376256, 9, 0, 1441792, 9, 0, 1441793, 9, 0, 1507328, 9, 0, 1507329, 9, 0, 1572864, 9, 0, 1572865, 9, 0, 1572866, 9, 0, 1572867, 9, 0, 1572868, 9, 0, 1572869, 9, 0, 1572870, 9, 0, 1572871, 9, 0, 1572872, 9, 0, 1572873, 9, 0, 1572874, 9, 0, 1572875, 9, 0, 1572876, 9, 0, 1572877, 9, 0, 1572878, 9, 0, 1572879, 9, 0, 1572880, 9, 0, 1572881, 9, 0 )
 
 [node name="PNJ's" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( -0.449669, 0 )
 
 [node name="Stranger2" parent="PNJ's" instance=ExtResource( 3 )]
 position = Vector2( 718.303, 154.48 )
-text = PoolStringArray( "This city must be guarded.", "The liberatists don\'t understand.", "We are fucked without a King." )
+text = PoolStringArray( "This city must be guarded.", "The liberatists don\'t understand.", "We are fucked without a King.", "NIquE TOI", "RAPH" )
 voice = ExtResource( 4 )
 
 [node name="Player" type="KinematicBody2D" parent="." groups=[
@@ -309,12 +308,12 @@ position = Vector2( -0.449669, 0 )
 [node name="Stranger" type="KinematicBody2D" parent="Ennemies" groups=[
 "Attackable",
 ]]
+editor/display_folded = true
 position = Vector2( 489.811, 688.451 )
 script = ExtResource( 47 )
-velocity = 40
+velocity = 150
 
 [node name="Interabox" type="Node2D" parent="Ennemies/Stranger"]
-editor/display_folded = true
 position = Vector2( 190.874, -270.738 )
 
 [node name="Up" type="Area2D" parent="Ennemies/Stranger/Interabox"]
@@ -360,6 +359,7 @@ frames = SubResource( 10 )
 animation = "idle_right"
 
 [node name="Path2D" type="Path2D" parent="Ennemies/Stranger"]
+editor/display_folded = true
 curve = SubResource( 11 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Ennemies/Stranger/Path2D"]

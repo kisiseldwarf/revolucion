@@ -1,33 +1,27 @@
 extends "res:///Scripts/Human/Human.gd"
 
 onready var nav2D = get_parent().get_parent().get_node("Navigation2D")
-var moving = 0
 
 func _physics_process(delta):
-	pass
+	animation(direction_v)
 
 func _process(delta):
-	if is_player_in($Aggro) && !moving && !is_player_in(get_active_interabox()):
-		follow(is_player_in($Aggro))
+	if is_player_in($Aggro) && !is_player_in(get_active_interabox()):
+		fill_curve(is_player_in($Aggro))
+		$Path2D/PathFollow2D.offset += velocity
+		direction_v = get_orientation($Path2D/PathFollow2D.position).round()
+		move_and_slide(direction_v * velocity)
+	else:
+		direction_v = Vector2(0,0)
 
-func follow(object):
-	moving = 1
+func fill_curve(object):
 	var start_point = position
 	var end_point = object.position
-	var path = nav2D.get_simple_path(start_point,end_point,false)
-	var i = 1
-	while !is_player_in(get_active_interabox()) && i != path.size()-1:
-		move(path[i],1)
-		yield(self,"move_finished")
-		if object == null:
-			moving=0
-			break
-		if end_point.round() != object.position.round():
-			i = 1
-			end_point = object.position
-			path = nav2D.get_simple_path(start_point,end_point,false)
-		i = i +1
-	moving = 0
+	var path = nav2D.get_simple_path(start_point,end_point)
+	var curve = Curve2D.new()
+	for point in path:
+		curve.add_point(point)
+	$Path2D.curve = curve
 
 func is_player_in(area2D):
 	var bodies = area2D.get_overlapping_bodies()

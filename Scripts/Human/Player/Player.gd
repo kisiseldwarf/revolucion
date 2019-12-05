@@ -12,6 +12,7 @@ func _ready():
 	$Camera2D/HUD/TextInterfaceEngine.show()
 
 func _physics_process(delta):
+	animation(direction_v)
 	if !in_dialog && !in_cinematic:
 		movement(delta)
 
@@ -77,5 +78,5 @@ func movement(delta):
 	
 	var movement = direction.normalized() * velocity
 	move_and_slide(movement)
-	animation(direction)
+	direction_v = direction
 	return direction
