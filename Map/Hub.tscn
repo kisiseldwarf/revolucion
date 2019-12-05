@@ -1,214 +1,167 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Scripts/Hub.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/tileset-castle.tres" type="TileSet" id=2]
-[ext_resource path="res://Scripts/Human/Player/Player.gd" type="Script" id=3]
-[ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/characters_frames/1-0.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/characters_frames/1-1.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/characters_frames/1-2.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/characters_frames/1-3.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/characters_frames/1-4.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/characters_frames/1-5.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/characters_frames/1-6.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/characters_frames/1-7.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/characters_frames/1-8.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/characters_frames/0-1.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/characters_frames/0-2.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/characters_frames/0-3.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/characters_frames/0-4.png" type="Texture" id=17]
-[ext_resource path="res://Sprites/characters_frames/0-5.png" type="Texture" id=18]
-[ext_resource path="res://Sprites/characters_frames/0-6.png" type="Texture" id=19]
-[ext_resource path="res://Sprites/characters_frames/0-7.png" type="Texture" id=20]
-[ext_resource path="res://Sprites/characters_frames/0-8.png" type="Texture" id=21]
-[ext_resource path="res://Sprites/characters_frames/3-0.png" type="Texture" id=22]
-[ext_resource path="res://Sprites/characters_frames/3-1.png" type="Texture" id=23]
-[ext_resource path="res://Sprites/characters_frames/3-2.png" type="Texture" id=24]
-[ext_resource path="res://Sprites/characters_frames/3-3.png" type="Texture" id=25]
-[ext_resource path="res://Sprites/characters_frames/3-4.png" type="Texture" id=26]
-[ext_resource path="res://Sprites/characters_frames/3-5.png" type="Texture" id=27]
-[ext_resource path="res://Sprites/characters_frames/3-6.png" type="Texture" id=28]
-[ext_resource path="res://Sprites/characters_frames/3-7.png" type="Texture" id=29]
-[ext_resource path="res://Sprites/characters_frames/3-8.png" type="Texture" id=30]
-[ext_resource path="res://Sprites/characters_frames/2-1.png" type="Texture" id=31]
-[ext_resource path="res://Sprites/characters_frames/2-2.png" type="Texture" id=32]
-[ext_resource path="res://Sprites/characters_frames/2-3.png" type="Texture" id=33]
-[ext_resource path="res://Sprites/characters_frames/2-4.png" type="Texture" id=34]
-[ext_resource path="res://Sprites/characters_frames/2-5.png" type="Texture" id=35]
-[ext_resource path="res://Sprites/characters_frames/2-6.png" type="Texture" id=36]
-[ext_resource path="res://Sprites/characters_frames/2-7.png" type="Texture" id=37]
-[ext_resource path="res://Sprites/characters_frames/2-8.png" type="Texture" id=38]
-[ext_resource path="res://Sprites/characters_frames/0-0.png" type="Texture" id=39]
-[ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=40]
-[ext_resource path="res://addons/GodotTIE/GodotTIE_icon.png" type="Texture" id=41]
-[ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=42]
-[ext_resource path="res://Scripts/Bards/Bard_line_detection.gd" type="Script" id=43]
-[ext_resource path="res://Scripts/Tavern entrance.gd" type="Script" id=44]
-[ext_resource path="res://Scripts/Bards/Bard_line.gd" type="Script" id=45]
-[ext_resource path="res://Scripts/Human/PNJ/PNJ.gd" type="Script" id=46]
-[ext_resource path="res://voices/talk_asgore_1.wav" type="AudioStream" id=47]
-[ext_resource path="res://voices/talk_flowey_1.wav" type="AudioStream" id=48]
-[ext_resource path="res://voices/talk_sans.wav" type="AudioStream" id=49]
-[ext_resource path="res://Scripts/Human/Enemy/Enemy.gd" type="Script" id=50]
+[ext_resource path="res://Subs/PNJ.tscn" type="PackedScene" id=3]
+[ext_resource path="res://voices/talk_toriel_1.wav" type="AudioStream" id=4]
+[ext_resource path="res://Scripts/Human/Player/Player.gd" type="Script" id=5]
+[ext_resource path="res://Sprites/characters_frames/2-0.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/characters_frames/0-1.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/characters_frames/0-2.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/characters_frames/0-3.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/characters_frames/0-4.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/characters_frames/0-5.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/characters_frames/0-6.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/characters_frames/0-7.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/characters_frames/0-8.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/characters_frames/3-0.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/characters_frames/3-1.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/characters_frames/3-2.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/characters_frames/3-3.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/characters_frames/3-4.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/characters_frames/3-5.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/characters_frames/3-6.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/characters_frames/3-7.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/characters_frames/3-8.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/characters_frames/2-1.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/characters_frames/2-2.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/characters_frames/2-3.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/characters_frames/2-4.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/characters_frames/2-5.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/characters_frames/2-6.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/characters_frames/2-7.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/characters_frames/2-8.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/characters_frames/1-0.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/characters_frames/0-0.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/characters_frames/1-1.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/characters_frames/1-2.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/characters_frames/1-3.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/characters_frames/1-4.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/characters_frames/1-5.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/characters_frames/1-6.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/characters_frames/1-7.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/characters_frames/1-8.png" type="Texture" id=41]
+[ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=42]
+[ext_resource path="res://addons/GodotTIE/GodotTIE_icon.png" type="Texture" id=43]
+[ext_resource path="res://Fonts/new_dynamicfont.tres" type="DynamicFont" id=44]
+[ext_resource path="res://Scripts/Bards/Bard_line_detection.gd" type="Script" id=45]
+[ext_resource path="res://Scripts/Bards/Bard_line.gd" type="Script" id=46]
+[ext_resource path="res://Scripts/Human/Enemy/Enemy.gd" type="Script" id=47]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13.394, 24.0873 )
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "side_walk_right",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "walk_up",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "side_walk_left",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 22 ) ],
+"frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "idle_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ) ],
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": true,
 "name": "walk_down",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 32 ) ],
 "loop": true,
 "name": "idle_left",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 39 ) ],
+"frames": [ ExtResource( 33 ) ],
 "loop": true,
 "name": "idle_up",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "side_walk_right",
+"speed": 15.0
 } ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 36.694, 9.46896 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 27.4358, 9.46896 )
+extents = Vector2( 11.8505, 37.8516 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 11.8505, 24.1658 )
+extents = Vector2( 35.1759, 9.87814 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 23.7618, 9.87814 )
+extents = Vector2( 11.5939, 36.8101 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 11.5939, 24.1658 )
-
-[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 76.4235, 13.9753 )
 
-[sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 35.2669, 55.2284 )
-
-[sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 13.394, 18.4772 )
-
-[sub_resource type="SpriteFrames" id=11]
-animations = [ {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "side_walk_right",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "walk_up",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
-"loop": true,
-"name": "side_walk_left",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 22 ) ],
-"loop": true,
-"name": "idle_right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ) ],
-"loop": true,
-"name": "walk_down",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "idle_left",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 39 ) ],
-"loop": true,
-"name": "idle_up",
-"speed": 5.0
-} ]
-
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 156.602, 139.546 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 13.394, 24.0873 )
 
-[sub_resource type="SpriteFrames" id=14]
+[sub_resource type="SpriteFrames" id=10]
 animations = [ {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "side_walk_right",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "walk_up",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "side_walk_left",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 22 ) ],
+"frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "idle_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ) ],
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": true,
 "name": "walk_down",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 32 ) ],
 "loop": true,
 "name": "idle_left",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 39 ) ],
+"frames": [ ExtResource( 33 ) ],
 "loop": true,
 "name": "idle_up",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "side_walk_right",
+"speed": 15.0
 } ]
+
+[sub_resource type="Curve2D" id=11]
+_data = {
+"points": PoolVector2Array(  )
+}
 
 [node name="Hub" type="Node2D"]
 script = ExtResource( 1 )
@@ -233,20 +186,30 @@ cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( 16, 9, 0, 327705, 9, 0, 327707, 9, 0, 393240, 9, 0, 393242, 9, 0, 393244, 9, 0, 458776, 9, 0, 458778, 9, 0, 458780, 9, 0, 458782, 9, 0, 524313, 9, 0, 524315, 9, 0, 589848, 9, 0, 1048576, 9, 0, 1114112, 9, 0, 1179648, 9, 0, 1245184, 9, 0, 1310720, 9, 0, 1376256, 9, 0, 1441792, 9, 0, 1441793, 9, 0, 1507328, 9, 0, 1507329, 9, 0, 1572864, 9, 0, 1572865, 9, 0, 1572866, 9, 0, 1572867, 9, 0, 1572868, 9, 0, 1572869, 9, 0, 1572870, 9, 0, 1572871, 9, 0, 1572872, 9, 0, 1572873, 9, 0, 1572874, 9, 0, 1572875, 9, 0, 1572876, 9, 0, 1572877, 9, 0, 1572878, 9, 0, 1572879, 9, 0, 1572880, 9, 0, 1572881, 9, 0 )
 
+[node name="PNJ's" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( -0.449669, 0 )
+
+[node name="Stranger2" parent="PNJ's" instance=ExtResource( 3 )]
+position = Vector2( 718.303, 154.48 )
+text = PoolStringArray( "This city must be guarded.", "The liberatists don\'t understand.", "We are fucked without a King." )
+voice = ExtResource( 4 )
+
 [node name="Player" type="KinematicBody2D" parent="." groups=[
 "Player",
 ]]
+editor/display_folded = true
 position = Vector2( 680.235, 417.713 )
-script = ExtResource( 3 )
+script = ExtResource( 5 )
 velocity = 200
 text_speed = 0.01
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( -1.39209, 6.93565 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
-frames = SubResource( 3 )
+frames = SubResource( 2 )
 animation = "idle_up"
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -276,11 +239,11 @@ margin_left = 315.595
 margin_top = 468.373
 margin_right = 550.595
 margin_bottom = 532.373
-script = ExtResource( 40 )
+script = ExtResource( 42 )
 __meta__ = {
-"_editor_icon": ExtResource( 41 )
+"_editor_icon": ExtResource( 43 )
 }
-FONT = ExtResource( 42 )
+FONT = ExtResource( 44 )
 
 [node name="Interabox" type="Node2D" parent="Player"]
 editor/display_folded = true
@@ -289,47 +252,37 @@ editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Interabox/Up"]
 position = Vector2( -0.625916, -24.3696 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Right" type="Area2D" parent="Player/Interabox"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Interabox/Right"]
 position = Vector2( 22.4508, 7.04141 )
-shape = SubResource( 5 )
+shape = SubResource( 4 )
 
 [node name="Down" type="Area2D" parent="Player/Interabox"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Interabox/Down"]
 position = Vector2( -1.32385, 39.4896 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [node name="Left" type="Area2D" parent="Player/Interabox"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Interabox/Left"]
 position = Vector2( -25.267, 7.108 )
-shape = SubResource( 7 )
+shape = SubResource( 6 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
 
 [node name="Trigger Zones" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Bard_line_detection" type="Area2D" parent="Trigger Zones"]
 editor/display_folded = true
-script = ExtResource( 43 )
+script = ExtResource( 45 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger Zones/Bard_line_detection"]
 position = Vector2( 417.731, 274.975 )
-shape = SubResource( 8 )
-
-[node name="TP 1" type="Node2D" parent="Trigger Zones"]
-
-[node name="Tavern entrance" type="Area2D" parent="Trigger Zones/TP 1"]
-script = ExtResource( 44 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger Zones/TP 1/Tavern entrance"]
-position = Vector2( -247.593, -5.70767 )
-shape = SubResource( 9 )
+shape = SubResource( 7 )
 
 [node name="GUI" type="CanvasLayer" parent="."]
 editor/display_folded = true
@@ -341,74 +294,11 @@ margin_left = 358.471
 margin_top = 445.499
 margin_right = 533.471
 margin_bottom = 478.499
-custom_fonts/normal_font = ExtResource( 42 )
+custom_fonts/normal_font = ExtResource( 44 )
 tab_size = 24
 text = "Press 'Enter' to wait the song"
 scroll_active = false
-script = ExtResource( 45 )
-
-[node name="PNJ\'s" type="Node2D" parent="."]
-editor/display_folded = true
-position = Vector2( -0.449669, 0 )
-
-[node name="Stranger5" type="KinematicBody2D" parent="PNJ\'s" groups=[
-"PNJs",
-"Attackable",
-]]
-editor/display_folded = true
-position = Vector2( 722.847, 167.512 )
 script = ExtResource( 46 )
-text = PoolStringArray( "No King shall rule forever.", "This is an elementary rule, my dear..." )
-voice = ExtResource( 47 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PNJ\'s/Stranger5"]
-position = Vector2( -1.39209, 6.93565 )
-shape = SubResource( 10 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="PNJ\'s/Stranger5"]
-position = Vector2( 0.663452, 0 )
-frames = SubResource( 11 )
-animation = "idle_right"
-
-[node name="Stranger4" type="KinematicBody2D" parent="PNJ\'s" groups=[
-"PNJs",
-"Attackable",
-]]
-editor/display_folded = true
-position = Vector2( 675.122, 259.216 )
-script = ExtResource( 46 )
-text = PoolStringArray( "Am I a fool \?", "azkdjhazkmdjazuidujlkazgdolazjhshuazhjd;gazoldjbhazsujd;asgidojazhdyuazm:dbvyazujdnazfdlaznvcxgazl;s bazkj,shbazghs:n azhjdujas,ndbvaqjwbgazgyd:aezvfi" )
-voice = ExtResource( 48 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PNJ\'s/Stranger4"]
-position = Vector2( -1.39209, 6.93565 )
-shape = SubResource( 10 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="PNJ\'s/Stranger4"]
-position = Vector2( 0.663452, -2.20526 )
-frames = SubResource( 11 )
-animation = "idle_right"
-
-[node name="Stranger" type="KinematicBody2D" parent="PNJ\'s" groups=[
-"PNJs",
-"Attackable",
-]]
-editor/display_folded = true
-position = Vector2( 558.66, 152.037 )
-script = ExtResource( 46 )
-text = PoolStringArray( "My name is Az-Drel.", "I was once the guard of this city.", "But now, the arrow in my knee stopped me from it." )
-voice = ExtResource( 49 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PNJ\'s/Stranger"]
-position = Vector2( -1.39209, 6.93565 )
-shape = SubResource( 10 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="PNJ\'s/Stranger" groups=[
-"Attackable",
-]]
-position = Vector2( 0.663452, 0 )
-frames = SubResource( 11 )
-animation = "idle_right"
 
 [node name="Meeting" type="Node2D" parent="."]
 position = Vector2( 416.714, 324.553 )
@@ -420,35 +310,36 @@ position = Vector2( -0.449669, 0 )
 "Attackable",
 ]]
 position = Vector2( 489.811, 688.451 )
-script = ExtResource( 50 )
-velocity = 30
+script = ExtResource( 47 )
+velocity = 40
 
 [node name="Interabox" type="Node2D" parent="Ennemies/Stranger"]
+editor/display_folded = true
 position = Vector2( 190.874, -270.738 )
 
 [node name="Up" type="Area2D" parent="Ennemies/Stranger/Interabox"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemies/Stranger/Interabox/Up"]
-position = Vector2( -0.625916, -24.3696 )
-shape = SubResource( 4 )
+position = Vector2( -191.079, 246.345 )
+shape = SubResource( 3 )
 
 [node name="Right" type="Area2D" parent="Ennemies/Stranger/Interabox"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemies/Stranger/Interabox/Right"]
-position = Vector2( 22.4508, 7.04141 )
-shape = SubResource( 5 )
+position = Vector2( -168.002, 283.198 )
+shape = SubResource( 4 )
 
 [node name="Down" type="Area2D" parent="Ennemies/Stranger/Interabox"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemies/Stranger/Interabox/Down"]
-position = Vector2( -1.32385, 39.4896 )
-shape = SubResource( 6 )
+position = Vector2( -194.497, 310.205 )
+shape = SubResource( 5 )
 
 [node name="Left" type="Area2D" parent="Ennemies/Stranger/Interabox"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemies/Stranger/Interabox/Left"]
-position = Vector2( -25.267, 7.108 )
-shape = SubResource( 7 )
+position = Vector2( -215.72, 281.904 )
+shape = SubResource( 6 )
 
 [node name="Aggro" type="Area2D" parent="Ennemies/Stranger"]
 editor/display_folded = true
@@ -457,16 +348,20 @@ position = Vector2( -0.464478, 4.40392 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemies/Stranger/Aggro"]
 visible = false
 position = Vector2( -3.73901, 2.06036 )
-shape = SubResource( 12 )
+shape = SubResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ennemies/Stranger"]
 position = Vector2( -1.39209, 6.93565 )
-shape = SubResource( 13 )
+shape = SubResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Ennemies/Stranger"]
 position = Vector2( 0.663452, 0 )
-frames = SubResource( 14 )
+frames = SubResource( 10 )
 animation = "idle_right"
+
+[node name="Path2D" type="Path2D" parent="Ennemies/Stranger"]
+curve = SubResource( 11 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Ennemies/Stranger/Path2D"]
 [connection signal="body_entered" from="Trigger Zones/Bard_line_detection" to="GUI/Bard/Bard_line_text" method="_on_Bard_line_detection_body_entered"]
 [connection signal="body_exited" from="Trigger Zones/Bard_line_detection" to="GUI/Bard/Bard_line_text" method="_on_Bard_line_detection_body_exited"]
-[connection signal="body_entered" from="Trigger Zones/TP 1/Tavern entrance" to="Trigger Zones/TP 1/Tavern entrance" method="_on_Tavern_entrance_body_entered"]

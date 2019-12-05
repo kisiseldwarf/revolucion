@@ -394,8 +394,6 @@ func _skip_word():
 
 func _label_print(t): # Add text to the label
 	var n = _label.get_line_count()
-	print("added char")
-	print(_buffer[0]["buff_sound"])
 	if _buffer[0]["buff_sound"] != null:
 		_sound_manager.play()
 	

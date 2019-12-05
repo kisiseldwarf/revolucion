@@ -1,11 +1,10 @@
 extends KinematicBody2D
 
 export var HP = 1
-export var attack = 50
+export var damage = 50
 export var dying_time = 3
 signal death
 signal move_finished
-signal new_physics_frame
 export var velocity = 4
 var last_direction = Vector2(0,0)
 enum direction { UP, DOWN, RIGHT, LEFT}
@@ -89,22 +88,19 @@ func animation(direction):
 			$AnimatedSprite.play("walk_up")
 			last_direction = direction
 
-func move(point):
-	var direction = Vector2()
-	direction = get_orientation(point)
-	var absolute = position - point
-	absolute = absolute.abs()
-	while absolute > Vector2(1,1):
+func move(point,tolerance):
+	var distance_to_go = position - point
+	distance_to_go = distance_to_go.abs()
+	var tolerance_v = Vector2(tolerance,tolerance)
+	var direction = get_orientation(point)
+	while distance_to_go > tolerance_v:
 		move_and_slide(direction * velocity)
-		var direction_rounded = direction.round()
-		animation(direction_rounded)
-		yield(self,"new_physics_frame")
-		absolute = position - point
-		absolute = absolute.abs()
+		animation(direction.round())
+		yield(get_tree(),"physics_frame")
+		distance_to_go = position - point
+		distance_to_go = distance_to_go.abs()
 	emit_signal("move_finished")
 
-#get the orientation towards the position
-#used in move to know the orientation to follow to reach the point
 func get_orientation(point):
 	var direction = Vector2()
 	direction.x = point.x - position.x
@@ -129,7 +125,7 @@ func attack():
 	var bodies = area_of_attack.get_overlapping_bodies()
 	for i in bodies:
 		if i.is_in_group("Attackable"):
-			i.take_damage(attack)
+			i.take_damage(damage)
 
 func take_damage(damage):
 	HP = HP - damage
@@ -146,3 +142,14 @@ func die():
 	#erasing the player from existence
 	emit_signal("death")
 	free()
+
+func get_active_interabox():
+	match get_direction():
+		direction.UP:
+			return $Interabox/Up
+		direction.DOWN:
+			return $Interabox/Down
+		direction.RIGHT:
+			return $Interabox/Right
+		direction.LEFT:
+			return $Interabox/Left

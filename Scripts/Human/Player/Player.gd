@@ -30,16 +30,18 @@ func dialog():
 	emit_signal("dialog_began")
 	var pnjs = get_active_interabox().get_overlapping_bodies()
 	print(get_active_interabox().get_overlapping_bodies())
-	if pnjs.size() > 1 && pnjs[1].is_in_group("PNJs") && !in_dialog:
+	print(in_dialog)
+	if pnjs.size() > 1 && pnjs[0].is_in_group("PNJs") && !in_dialog:
 		in_dialog = 1
-		pnjs[1].dialog(self)
+		pnjs[0].dialog(self)
 		look(last_direction)
 
 		#Dialog
 		$Camera2D/HUD/DialogPanel.show()
-		for i in pnjs[1].text:
-			if pnjs[1].has_a_voice():
-				$Camera2D/HUD/TextInterfaceEngine.buff_text(i,text_speed,"",false,pnjs[1].get_voice())
+		for i in pnjs[0].text:
+			print(i)
+			if pnjs[0].has_a_voice():
+				$Camera2D/HUD/TextInterfaceEngine.buff_text(i,text_speed,"",false,pnjs[0].get_voice())
 			else:
 				$Camera2D/HUD/TextInterfaceEngine.buff_text(i,text_speed)
 			$Camera2D/HUD/TextInterfaceEngine.set_state(1)
@@ -77,14 +79,3 @@ func movement(delta):
 	move_and_slide(movement)
 	animation(direction)
 	return direction
-
-func get_active_interabox():
-	match get_direction():
-		direction.UP:
-			return $Interabox/Up
-		direction.DOWN:
-			return $Interabox/Down
-		direction.RIGHT:
-			return $Interabox/Right
-		direction.LEFT:
-			return $Interabox/Left
